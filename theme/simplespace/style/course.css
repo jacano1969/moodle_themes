@@ -1,0 +1,220 @@
+/** inside  of course  background: url([[pix:theme|section-sl]]) no-repeat 0 50%, 
+    url([[pix:theme|section-sr]]) no-repeat 100% 50%; **/
+ul.topics, ul.weeks {
+	margin: 0px;
+}
+
+.path-course-view .course-content li.section {
+    border: 0px solid transparent;
+    background: transparent;
+}
+
+.path-course-view .course-content .side {
+    padding: 5px 0;
+}
+
+#page-course-view-weeks .weekdates {
+    font-size: 1em;
+    font-weight: normal;
+    color: #777;
+    padding: 2px;
+}
+
+.course-content .main {
+  background:transparent;
+ }
+
+/*current topic hightlight */
+.course-content .current {
+  background:#ffffee;
+ }
+
+.course-content .current .left.side {
+	color: #333;
+} 
+ 
+.course-content .main .content {
+    padding: 10px;
+    background:transparent;
+}
+
+.course-content .section li.activity {
+	padding: 3px 0px;
+}
+
+span.completionprogress {
+    font-size: 11px;
+    font-weight: 200;
+    padding-top: 3px;
+}
+
+.path-course-view li.activity span.autocompletion, .path-course-view li.activity form.togglecompletion {
+    right: -10px;
+}
+
+/*course combo list on front page */
+.course_category_tree .category {
+    background-color: #FFFFFF;
+    background: #fff url([[pix:theme|hgradient]]) repeat-x top left;
+    
+    border: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+}
+
+.course_category_tree .category .subcategories {
+    background-color: inherit;
+    border: 1px solid #FFFFFF;
+    padding-left: 16px;
+}
+
+.course_category_tree .category.with_children .category_label {
+    background-position: 3px 3px;
+}
+
+.course_category_tree .category.with_children > .category_label {
+    background-repeat: no-repeat;
+}
+
+.course_category_tree .category_label {
+    padding-left: 13px;
+}
+
+.course_category_tree .category_link {
+    display: block;
+    font-size: 120%;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.course_category_tree .category .courses {
+    background-color: inherit;
+}
+
+.course_category_tree .category .course {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #F9F9F9 #F9F9F9 #EEEEEE;
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+}
+
+.course_category_tree .category .courses .course_link {
+    margin: 5px 100px 5px 5px;
+}
+
+.course_category_tree .category .course.even {
+    background-color: #F6F6F6;
+    border-color: #F9F9F9 #EEEEEE #EEEEEE;
+}
+
+.course_category_tree .category .course_info {
+    right: 3px;
+    top: 3px;
+}
+
+/*new 2.3 changes */
+span.section-modchooser-link a{
+	padding: .5em 0;
+	display: inline-block;
+}
+
+#dndupload-status {
+  	border: 1px solid transparent;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+    padding: 0.8em;
+    text-shadow: 0 1px 1px #FFFFFF;
+    z-index: 99999;
+}
+
+.chooserdialogue.moodle-dialogue-focused, .yui3-widget-positioned.yui3-widget-stacked.yui3-dd-draggable {
+	z-index: 99999 !important;
+}
+
+/*titles for single sections */
+.course-content .single-section .section-navigation.headingblock {
+	background: #eee url([[pix:theme|bar1]]) repeat-x bottom left;
+	margin-bottom: 0px;
+	border: 1px solid #DDDDDD;
+	border-bottom: 0px;
+    box-shadow: 0 1px 1px #FAFAFA inset;
+    text-shadow: 1px 1px 1px white;
+}
+
+.course-content .single-section ul li.section {
+	margin-top: 0px;
+}
+
+.course-content .single-section .section-navigation .title {
+	font-size: .8em;
+	font-weight: inherit;
+}
+
+.course-content .single-section .section-navigation .mdl-right {
+    font-size: 75%;
+}
+
+.course-content .single-section .section-navigation .mdl-right .rarrow {
+    margin-left: 0.4em;
+    font-size: .6em;
+}
+
+.course-content .single-section .section-navigation .mdl-left {
+	font-size: 75%;
+}
+
+.course-content .single-section .section-navigation .mdl-left .larrow {
+    margin-right: 0.4em;
+    font-size: .7em;
+}
+
+/*course changes */
+.course-content ul.topics li.section .left, .course-content ul.weeks li.section .left {
+	width: 5px;
+}
+
+.course-content ul.topics li.section .right, .course-content ul.weeks li.section .right {
+	width: 5px;
+}
+
+.course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
+    margin: 0 5px;
+    padding: 15px 25px 20px;
+    border: 0px solid transparent;
+    border-bottom: 1px solid #eee;
+    box-shadow: none;
+}
+
+.editing .course-content ul.topics li.section .left, .editing .course-content ul.topics li.section .right, .editing .course-content ul.weeks li.section .left, .editing .course-content ul.weeks li.section .right {
+	width: 40px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.editing .course-content ul.topics li.section .left, .editing .course-content ul.weeks li.section .left {
+	left: 0px;
+}
+
+.editing li.section {
+	position: relative;
+}
+
+/*
+.editing .course-content ul.topics li.section .content, .editing .course-content ul.weeks li.section .content {
+	margin: 0 40px;
+}
+*/
+
+.course-content {
+	clear: both;
+}
+
+.path-course-view .completionprogress {
+    float: right;
+    display: none;
+    text-align: right;
+}

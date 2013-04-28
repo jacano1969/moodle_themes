@@ -1,0 +1,672 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	background: #333 url([[pix:theme|background]]);
+	color: #333;
+}
+
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* background: #f1eee7 url([[pix:theme|bkg]]) no-repeat 100% 0; */
+
+/*link colors */
+a:link,
+a:visited, .tabtree .tabrow0 li a  {
+    color: [[setting:linkcolor]];
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: [[setting:linkhover]];
+    text-decoration: none;
+}
+
+a:active {
+    outline: 0;
+
+/* for browsers that understand */
+}
+
+a:focus {
+    outline: 0;
+
+/* for browsers that understand */
+}
+
+/* real main headings */
+.headingwrap {
+	background: url([[pix:theme|dot]]) repeat-x 0 55%;
+	text-align: left;
+	margin-bottom: 10px;
+	padding-left: 50px;
+}
+
+.headingblock {
+  color: #333;
+  border-bottom: 0px solid #eee;
+  font-family: Georgia, Times, "Times New Roman",serif;
+  font-weight: 600;
+}
+
+.headingwrap .headingblock, .headingwrap h2 {
+	display: inline;
+	background: #fff;
+	padding: 0 20px;
+	font-size: 1.8em;
+	font-weight: 400;
+}
+
+/*outercontainer */
+#wrapper {
+	background: transparent;
+	clear: both;
+}
+
+/*outer container around moodle content, set padding here for moodle content if necessary */
+#page-content-wrapper {
+	background: #fff;
+    margin-top: 20px;
+
+    border: 1px solid #000000;
+    -moz-box-shadow: 0 0 3px #000000 inset, 0 0 6px #666666;
+    -webkit-box-shadow: 0 0 3px #000000 inset, 0 0 6px #666666;
+    box-shadow: 0 0 3px #000000 inset, 0 0 6px #666666;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#page-content {
+	float: none;
+	width: auto;
+	padding: 15px 20px;
+	padding-right: 15px;
+}
+
+.content-only #page-content {
+	padding-left: 10px;
+}
+
+.content-only #page-content #region-main {
+    padding: 0 15px;
+}
+
+.clearer {
+	clear: both;
+}
+
+
+/* header, get rid of the float from base theme */
+#page-header-wrapper {
+	height: 100px;
+	border-bottom: 1px solid #282828;
+	background: url([[pix:theme|tshad]]) repeat-x bottom left;
+}
+
+#page-header {
+	float: none;
+	clear: both;
+	height: 100px;
+
+	width: 90%;
+	min-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background: url([[pix:theme|fshadow]]) no-repeat top left;
+}
+
+.headermenu {
+	clear: right;
+	margin-top: 15px;
+	color: #666;
+	text-shadow: 0 -1px 1px #000000;
+}
+
+.headermenu a {
+	color: #ccc;
+}
+
+/*logo if any*/
+#logo {
+	float: left;
+	margin-top: 20px;
+}
+
+/* Navbar */
+
+.navbar {
+
+  margin-top: 15px;
+  margin-bottom: -10px;
+  background: #fff;
+  min-height: 32px;
+
+  	border: 1px solid #000000;
+    -moz-box-shadow: 0 0 3px #000000 inset, 0 0 6px #666666;
+    -webkit-box-shadow: 0 0 3px #000000 inset, 0 0 6px #666666;
+    box-shadow: 0 0 3px #000000 inset, 0 0 6px #666666;
+    -webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+
+  clear: both;
+}
+
+
+
+.breadcrumb {
+	font-size: 12px;
+    padding: 9px 10px 0 0px;
+}
+
+.ie7 .breadcrumb, .ie8 .breadcrumb {
+	padding-left: 10px;
+}
+
+.breadcrumb li {
+
+}
+
+.breadcrumb li:first-child, .breadcrumb li:nth-child(2) .arrow {
+	display: none;
+}
+
+.navbar .sep {
+   font-size: .8em;
+   color: #ccc;
+   text-shadow: 0 1px 1px #666;
+}
+
+.navbutton table, .navbutton td {
+	padding: 0px;
+	margin: 0px;
+}
+
+#homer {
+	float: left;
+	margin-right: 5px;
+	min-height: 32px;
+	width: 36px;
+	border: 1px solid #ccc;
+	background: #ccc url([[pix:theme|bar1]]) repeat-x bottom left;
+	-webkit-box-shadow: inset 1px 1px 2px #fff; -moz-box-shadow: inset 1px 1px 2px #fff; box-shadow: inset 1px 1px 2px #fff;
+  background:             #dfdfdf;
+  color:                  #333;
+  text-shadow: 0 1px 0px  #fff;
+  background-image: url([[pix:theme|home]]), -moz-linear-gradient(top,
+                          #f5f5f5 0%,
+                          #cccccc 50%,
+                          #bebebe 50%,
+                          #f5f5f5 100%);
+  background-image: url([[pix:theme|home]]), -webkit-gradient(linear,left top,left bottom,
+    color-stop(0,         #f5f5f5),
+    color-stop(.5,        #cccccc),
+    color-stop(.5,       #bebebe),
+    color-stop(1,         #f5f5f5));
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px 1px 1px #fff inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), -1px 1px 1px #fff inset;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), -1px 1px 1px #fff inset;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+#homer:hover {
+	 border: 1px solid #2b6c00;
+	 background-image: url([[pix:theme|home]]), -moz-linear-gradient(top,
+                          #5de800 0%,
+                          #42a600 50%,
+                          #2b6c00 50%,
+                          #5de800 100%);
+
+    background-image: url([[pix:theme|home]]), -webkit-gradient(linear,left top,left bottom,
+    color-stop(0,         #5de800),
+    color-stop(.5,        #42a600),
+    color-stop(.5,       #2b6c00),
+    color-stop(1,         #5de800));
+
+     -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), -1px 1px 1px #fff inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), -1px 1px 1px #fff inset;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), -1px 1px 1px #ccfeaa inset;
+}
+
+.ie7 #homer, .ie8 #homer {
+	display: none;
+}
+
+/* footer */
+#page-footer {
+	float: none;
+	color: #666;
+	text-shadow: 0 -1px 1px #000000;
+}
+
+#page-footer a {
+	color: #ccc;
+}
+
+.wrap {
+	width: 90%;
+	min-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* forms and boxes */
+.mform fieldset {
+    border-color: #e5e5e5;
+}
+
+.mform legend.ftoggler {
+	color: #333;
+    border: 0px solid transparent;
+
+   	background: #fff;
+
+    padding: 3px 10px;
+}
+
+.generalbox {
+    border-color: #e5e5e5;
+    padding: 5px;
+}
+
+.sitetopic, .categorybox {
+	border: none;
+	padding: 0px;
+}
+
+#intro.generalbox {
+    width: 90%;
+    text-shadow: 0 1px 0 	#fff;
+    background: #eee;
+    background-image: -moz-linear-gradient(top,
+							#fff,
+							#eee);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#fff),
+		color-stop(1, 		#eee));
+	 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#cccccc')";
+    -moz-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1), -1px -1px 1px #fff inset;
+
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 1em auto;
+}
+
+#notice,
+.redirectmessage {
+    text-align: center;
+    border-color: #e5e5e5;
+    padding: 5px;
+}
+
+/* success or error message */
+div.notifysuccess {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #008500;
+    border: 3px solid #dadada;
+    text-align: center;
+    background: #fff url([[pix:theme|check]]) no-repeat 2% 50%;
+    padding: 5px;
+}
+
+div.box.errorbox {
+    border: 1px solid #dadada;
+    color: #ff0000;
+    background: #fff url([[pix:theme|error]]) no-repeat 1% 3%;
+    padding: 10px;
+}
+
+div.redirectmessage {
+    width: 60%;
+    margin: 10px auto 0 auto;
+    border: none;
+    font-size: 13px;
+    background: #fff url([[pix:theme|ajax-loader]]) no-repeat 50% 100%;
+    padding: 20px;
+}
+
+/*tabs */
+.tabtree .tabrow0 li a {
+   background: #ccc;
+   text-shadow: 0 1px 0 	#fff;
+   background-image: -moz-linear-gradient(top,
+							#e6e6e6,
+							#cccccc);
+	background-image: -webkit-gradient(linear,left top,left bottom,
+		color-stop(0, 		#e6e6e6),
+		color-stop(1, 		#cccccc));
+	 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#e6e6e6', EndColorStr='#cccccc')";
+
+	-moz-box-shadow: -1px 1px 1px #FFFFFF inset, 1px 1px 1px #FFFFFF inset;
+    -webkit-box-shadow: -1px 1px 1px #FFFFFF inset, 1px 1px 1px #FFFFFF inset;
+    box-shadow: -1px 1px 1px #FFFFFF inset, 1px 1px 1px #FFFFFF inset;
+   }
+
+.tabtree .tabrow0 .here a {
+    background: #fff ;
+    padding-bottom: 5px;
+}
+
+.tabtree .tabrow0 li a {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    padding: 8px 10px 4px;
+
+    -webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.ie7 .tabtree .tabrow0 li a {
+	padding-bottom: 7px;
+}
+
+/*2nd row */
+.tabtree .tabrow0 .tabrow1 {
+    padding: 15px 0 2px;
+}
+
+.tabtree .tabrow1 li a {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    padding: 8px 10px 4px;
+}
+
+.tabtree .tabrow0 ul, .tabtree .tabrow0 div {
+    border-top: 1px solid #DDDDDD;
+}
+
+.tabtree .tabrow1 ul, .tabtree .tabrow1 div {
+    border-top: 0px;
+}
+
+tabtree .tabrow0 ul, .tabtree .tabrow0 div {
+    border-top: 1px solid #CCCCCC;
+}
+/* Tables */
+
+#page-mod-glossary-editcategories .generalbox,
+#page-user-action_redir .generaltable,
+#page-user-index #participants,
+.path-mod-forum .forumheaderlist {
+    border-width: 1px;
+    border-color: #eee;
+    border-style: solid;
+}
+
+/*table header */
+#page-mod-glossary-editcategories .generalbox th,
+#page-user-action_redir .generaltable th,
+#page-user-index #participants th,
+.path-mod-choice .results th,
+.path-mod-forum .forumheaderlist th, #page-admin-course-category .generalbox th, .editcourse .header, .results .header, #attempts .header, .generaltable .header, .plugincompattable th, .environmenttable th, .forumheaderlist th {
+    color: #333;
+
+   	background: #ccc url([[pix:theme|bar1]]) repeat-x bottom left;
+
+	background-image: -moz-linear-gradient(top,
+                          #f5f5f5 0%,
+                          #cccccc 50%,
+                          #bebebe 50%,
+                          #f5f5f5 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,
+    color-stop(0,         #f5f5f5),
+    color-stop(.5,        #cccccc),
+    color-stop(.5,       #bebebe),
+    color-stop(1,         #f5f5f5));
+
+	text-shadow: 0 1px 1px 	#fff;
+   -moz-box-shadow:  1px 1px 1px #fff inset;
+	-webkit-box-shadow: 1px 1px 1px #fff inset;
+	box-shadow:  1px 1px 1px #fff inset;
+    border-bottom: 1px solid #dadada;
+    }
+
+#page-user-action_redir .generaltable td,
+#page-user-index #participants td,
+.path-mod-forum .forumheaderlist td {
+    border-color: #dadada;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 2px 8px;
+}
+
+#page-user-action_redir .generaltable .r1 td,
+#page-user-index #participants .r0 td,
+.path-mod-choice .results .count,
+.path-mod-forum .forumheaderlist .r1 td, .generaltable .r0 td {
+    background: #fafafa;
+}
+
+
+a.dimmed, a.dimmed_text, .dimmed_text, .dimmed_text a, .dimmed_category, .dimmed_category a {
+    color: #AAAAAA;
+}
+
+/** yui overlays **/
+
+div.yui3-widget.yui3-overlay.yui3-widget-positioned {
+    border: 1px solid #cccccc;
+}
+
+div.yui3-overlay-content.yui3-widget-stdmod {
+    border: 1px solid #fff;
+    background: #ffff66 url([[pix:theme|alert-overlay]]) repeat-x;
+}
+
+div.yui3-widget-bd {
+    border: none;
+    background: none;
+}
+
+div.yui3-widget-bd h1.helpheading {
+    font-size: 16px !important;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.yui-module.yui-overlay.yui-panel div.hd {
+    background: #eeeeee;
+    }
+
+/* report fixes and grade table fixes */
+.path-course-report #region-main-box #region-main .region-content, .path-course-report #page-content #region-main-box #region-post-box #region-main-wrap #region-main .region-content, .pagelayout-report .no-overflow {
+	overflow: auto;
+}
+
+.pagelayout-report #page-content {
+    overflow: hidden;
+} 
+
+.overview-tablecontainer, .graph {
+	overflow: auto;
+}
+
+table#completion-progress, #page-admin-course-index .editcourse {
+	display: block !important;
+    overflow: auto;
+    width: 100%;
+}
+
+#page-admin-plugins #plugins-control-panel {
+    display: block;
+    overflow: auto;
+}
+
+/*grade menu hover menu */
+.actionmenu .yui3-menu-content li a, .actionmenu .yui3-menu-content li, .actionmenu .yui3-menu-content li:hover a {
+	color: #000 !important;
+}
+
+.actionmenu div.yui3-menu {
+	border: 1px solid #ccc !important;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+	background: #fff !important;
+}
+
+#page-site-index .coursebox {
+	padding-bottom: 15px;
+}
+
+/*My Moodle Page */
+.path-my .coursebox .info {
+    float: none;
+    text-align: left;
+    width: 90%;
+}
+
+/*buttons */
+input[type="submit"], input[type="button"] {
+	padding: .45em .8em .5em;
+	border: 1px solid #ccc;
+	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 1px 1px 1px #fff inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 1px 1px 1px #fff inset;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), 1px 1px 1px #fff inset;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #ccc url([[pix:theme|bar1]]) repeat-x bottom left;
+
+	background-image: -moz-linear-gradient(top,
+                          #f5f5f5 0%,
+                          #cccccc 50%,
+                          #bebebe 50%,
+                          #f5f5f5 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,
+    color-stop(0,         #f5f5f5),
+    color-stop(.5,        #cccccc),
+    color-stop(.5,       #bebebe),
+    color-stop(1,         #f5f5f5));
+
+	text-shadow: 0 1px 1px 	#fff;
+	font-size: .95em;
+	font-weight: 500;
+	color: #333;
+	cursor: pointer;
+}
+
+.navbutton input[type="submit"] {
+	-webkit-box-shadow: inset 1px 1px 2px #fff; -moz-box-shadow: inset 1px 1px 2px #fff; box-shadow: inset 1px 1px 2px #fff;
+  background:             #dfdfdf;
+  color:                  #333;
+  text-shadow: 0 1px 0px  #fff;
+  background-image: -moz-linear-gradient(top,
+                          #f5f5f5 0%,
+                          #cccccc 50%,
+                          #bebebe 50%,
+                          #f5f5f5 100%);
+  background-image: -webkit-gradient(linear,left top,left bottom,
+    color-stop(0,         #f5f5f5),
+    color-stop(.5,        #cccccc),
+    color-stop(.5,       #bebebe),
+    color-stop(1,         #f5f5f5));
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.15) inset, 1px 0px 1px rgba(0, 0, 0, 0.15) inset;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.15) inset, 1px 0px 1px rgba(0, 0, 0, 0.15) inset;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.15) inset, 1px 0px 1px rgba(0, 0, 0, 0.15) inset;
+	color: #000;
+}
+
+.ie7 input[type="submit"]:hover, .ie7 input[type="button"]:hover, .ie8 input[type="submit"]:hover, .ie8 input[type="button"]:hover {
+	background-image: none;
+	border: 1px solid #666;
+}
+
+
+/*filemanager */
+.filemanager-container ul li {
+    border-bottom: 1px dashed #CCCCCC;
+    padding: 0.5em 0;
+}
+
+.filemanager-container {
+    padding: 1em 1.5em 1.5em;
+}
+
+.right.side img.icon {
+    height: 18px;
+    width: 18px;
+}
+
+.mform fieldset {
+    border-color: #CCCCCC;
+}
+
+/*custom menu, may not work in all situations */
+.custom_menu_submenu.yui3-menu-hidden {
+	opacity: 0.0;
+}
+
+.custom_menu_submenu {
+	opacity: 1.0;
+	-webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.yui3-menu-content li:hover {
+	-moz-transition:background-color 0.3s ease-in-out;
+	-webkit-transition:background-color 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+
+.course-content .single-section ul li.section {
+	margin-top: 0px;
+}
+
+.course-content .single-section .section-navigation .title {
+	font-size: .8em;
+	font-weight: inherit;
+}
+
+.course-content .single-section .section-navigation .mdl-right {
+    font-size: 75%;
+}
+
+.course-content .single-section .section-navigation .mdl-right .rarrow {
+    margin-left: 0.4em;
+    font-size: .6em;
+}
+
+.course-content .single-section .section-navigation .mdl-left {
+	font-size: 75%;
+}
+
+.course-content .single-section .section-navigation .mdl-left .larrow {
+    margin-right: 0.4em;
+    font-size: .7em;
+}
+
+.block .header .block_action img, .block .header .block_action input, .block_navigation .block_tree li.item_with_icon > p img, .block_navigation .block_tree .type_activity > p.tree_item.active_tree_node img, .block_navigation .block_tree li > p.hasicon img, .block_settings .block_tree li.item_with_icon > p img {
+	width: auto;
+	height: auto;
+}
+
+.sitetopic .section .activity:hover,
+.course-content .section .activity:hover { 
+	background-color: transparent; 
+}
+
+.block_navigation .block_tree li.type_activity > p.hasicon img {
+	width: 16px; height: 16px;
+}

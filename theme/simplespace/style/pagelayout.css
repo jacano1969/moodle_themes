@@ -1,0 +1,77 @@
+/* this file only used if the theme is two column only theme*/
+
+
+/* if side pre only theme, use the below
+
+.side-pre-only #page-content #region-main {
+    margin-left: 240px;
+}
+
+#page-content #region-pre {
+    width: 240px;
+}
+
+*/
+
+/* if side post only theme, use the below 
+
+.side-post-only #page-content #region-post {
+	 width: 240px;
+}
+
+.side-post-only #page-content #region-post-box {
+    margin-left: -240px;
+}
+
+.side-post-only #page-content #region-main {
+    margin-left: 240px;
+}
+
+.blocks-moving.side-post-only #page-content #region-main-box {left: 0;}
+.blocks-moving.side-post-only #page-content #region-post-box {margin-left: -260px;}
+.blocks-moving.side-post-only #page-content #region-main {margin-left: 260px;}
+.blocks-moving.side-post-only #page-content #region-post {width: 260px;}
+
+
+*/
+
+/* for making both sides larger 
+
+#page-content #region-main-box {
+    left: 230px;
+}
+
+#page-content #region-pre {
+    left: 230px;
+    width: 230px;
+}
+
+#page-content #region-post {
+    width: 230px;
+}
+
+#page-content #region-post-box {
+    margin-left: -460px;
+}
+
+#page-content #region-main {
+    margin-left: 460px;
+}
+
+.side-pre-only #page-content #region-post-box {
+    margin-left: -230px;
+}
+
+.side-pre-only #page-content #region-main {
+    margin-left: 230px;
+}
+
+.side-post-only #page-content #region-post-box {
+    margin-left: -230px;
+}
+
+.side-post-only #page-content #region-main {
+    margin-left: 230px;
+}
+
+*/

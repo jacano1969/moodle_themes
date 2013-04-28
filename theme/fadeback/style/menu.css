@@ -1,0 +1,113 @@
+/*overrides for custom menu. don't touch */
+/*YUI Reset */
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-content{ background-position: -10000px -10000px; border: none;
+	border-top: none;}
+
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label{ background-position: -10000px -10000px; border: none;
+	border-top: none; }
+
+.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label-active,.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content,.yui3-skin-sam #page .yui3-menu-horizontal .yui3-menu-label-menuvisible{ background-position: -10000px -10000px; border: none;
+	border-top: none; }
+
+.yui3-skin-sam #page .yui3-menu-label,
+.yui3-skin-sam #page .yui3-menu .yui3-menu .yui3-menu-label { background-position: right center; border: none;
+	border-top: none;}
+
+.yui3-skin-sam #page .yui3-menubuttonnav .yui3-menu-label em { background-position: right center; border: none;
+	border-top: none;}
+
+.yui3-skin-sam #page .yui3-splitbuttonnav .yui3-menu-label .yui3-menu-toggle { background-position: 3px center;	border: none;
+	border-top: none; }
+
+.yui3-skin-sam #page .yui3-splitbuttonnav .yui3-menu-label-menuvisible .yui3-menu-toggle { background-position: 0% 50%; border: none;
+	border-top: none;}
+
+.yui3-skin-sam #page .yui3-menu-content, .yui3-skin-sam #page .yui3-menu .yui3-menu .yui3-menu-content, .yui3-skin-sam #page .yui3-menu ul.first-of-type, .yui3-skin-sam #page .yui3-menu-horizontal ul  {
+	border: none;
+	border-top: none;
+}
+/*end overrides for custom menu. don't touch */
+
+/* menu bar background */
+#cmenuwrap {
+	float: right;
+}
+
+#custommenu {
+	font-size: 13px;
+	font-weight: 600;
+	background: url([[pix:theme|fshadow]]) no-repeat 50% -35px !important;
+	border: 1px solid #000000 !important;
+	border-top: none !important;
+	-moz-box-shadow: 0 -1px 2px #000000 inset;
+	-webkit-box-shadow: 0 -1px 2px #000000 inset;
+    box-shadow: 0 -1px 2px #000000 inset;
+    padding-left: 6px;
+    padding-right: 6px;
+    
+-webkit-border-bottom-right-radius: 6px;
+-webkit-border-bottom-left-radius: 6px;
+-moz-border-radius-bottomright: 6px;
+-moz-border-radius-bottomleft: 6px;
+border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px;
+}
+
+#custommenu * {
+	border: none ;
+}
+	
+#custommenu .yui3-menu-horizontal.javascript-disabled li a {
+    display: block;
+    padding: 0 15px !important;
+}
+
+/*bar menu item */
+.yui3-menu-content li a {
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 35px;
+	cursor: pointer;
+	border: none !important;
+	color: #fff !important;
+	text-shadow: 0 -1px 1px #000000;
+	padding: 0 15px !important;
+}
+
+/*bar menu item hover background color */
+.yui3-menu-content li:hover, div.yui3-menu.custom_menu_submenu {
+	background: #000 !important;
+}
+
+div.yui3-menu.custom_menu_submenu div.yui3-menu.custom_menu_submenu {
+	background: none !important;
+	min-width: 100px;
+}
+
+/*submenu background color */
+div.yui3-menu.custom_menu_submenu div.yui3-menu-content {
+	background: #000 !important;
+}
+
+div.yui3-menu.custom_menu_submenu div.yui3-menu-content {
+	min-width: 200px;
+	padding-bottom: 0 !important;
+}
+
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li {
+	border-left: none;
+	background: none !important;
+}
+
+/*submenu link color and size */
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li a {
+	font-size: 12px;
+	text-transform: none;
+	background: none !important;
+	text-decoration: none !important;
+}
+
+/*submenu hover */
+div.yui3-menu.custom_menu_submenu .yui3-menu-content li a:hover, div.yui3-menu.custom_menu_submenu li a.yui3-menu-label:hover {
+	background: #666 !important;
+}

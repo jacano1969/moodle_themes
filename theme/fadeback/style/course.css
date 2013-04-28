@@ -1,0 +1,118 @@
+/** inside  of course **/
+ul.topics, ul.weeks {
+	margin: 0px;
+}
+
+.path-course-view .course-content li.section {
+    border: 0px solid transparent;
+}
+
+.path-course-view .course-content .side {
+    padding: 5px 0;
+}
+
+#page-course-view-weeks .weekdates {
+    font-size: 1em;
+    font-weight: normal;
+    color: #777;
+    padding: 2px;
+}
+
+.course-content .main {
+  background:#fff;
+ }
+
+/*current topic hightlight */
+.ie7 .course-content .current, .ie8 .course-content .current{
+  background:#ffffcc;
+ }
+
+.course-content .current {
+	-webkit-box-shadow: 0px 0px 20px #dadada inset;
+	-moz-box-shadow: 0px 0px 20px #dadada inset;
+	box-shadow: 0px 0px 20px #dadada inset;
+} 
+
+.course-content .current .left.side {
+	color: #333;
+} 
+ 
+.course-content .section li.activity {
+	padding: 3px 0px;
+}
+
+span.completionprogress {
+    font-size: 11px;
+    font-weight: 200;
+    padding-top: 3px;
+}
+
+.path-course-view li.activity span.autocompletion, .path-course-view li.activity form.togglecompletion {
+    right: -10px;
+}
+
+li.section div.content, .path-course-view .section .content {
+	position:relative;
+    width:auto;
+   
+    padding:20px 20px 20px;
+   
+    background:#fafafa;
+    border: 1px solid #DDDDDD;
+    -webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+    
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), -1px -1px 1px #fff inset;
+}
+
+li.section div.content:before,
+li.section div.content:after
+ {
+    content:'';
+    position:absolute;
+    z-index:-2;
+   -moz-transform: rotate(-3deg);
+   -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    bottom: 15px;
+    -moz-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.7);
+    height: 20%;
+    max-height: 100px;
+    left: 10px;
+    max-width: 180px;
+    width: 50%;
+}
+
+li.section div.content:after {
+    left:auto;
+    right: 10px;
+    -webkit-transform:skew(15deg) rotate(6deg);
+       -moz-transform:skew(15deg) rotate(6deg);
+       -moz-transform:skewX(15deg) rotate(6deg);
+            transform:skewX(15deg) rotate(6deg);
+}
+
+li.section {
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    background:transparent;
+	padding-bottom: 20px !important;
+}
+
+.editing li.section {
+	z-index: auto;
+}
+
+li.section.current {
+	padding-top: 20px !important;
+}
+
+#completionprogressid {
+	display: none;
+}

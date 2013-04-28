@@ -1,0 +1,24 @@
+
+
+
+.side-post-only #page-content #region-post {
+	 width: 250px;
+}
+
+.side-post-only #page-content #region-post-box {
+    margin-left: -250px;
+}
+
+.side-post-only #page-content #region-main {
+    margin-left: 250px;
+}
+
+#page-content #region-main {
+    padding: 0 35px;
+}
+
+.blocks-moving.side-post-only #page-content #region-main-box {left: 0;}
+.blocks-moving.side-post-only #page-content #region-post-box {margin-left: -250px;}
+.blocks-moving.side-post-only #page-content #region-main {margin-left: 250px;}
+.blocks-moving.side-post-only #page-content #region-post {width: 250px;}
+

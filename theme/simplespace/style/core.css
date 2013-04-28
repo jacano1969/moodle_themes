@@ -1,0 +1,607 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	background: #fff url([[setting:background]]);
+	color: #333;
+}
+
+html,body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,input,textarea {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* background: #f1eee7 url([[pix:theme|bkg]]) no-repeat 100% 0; */
+
+/*link colors */
+a:link,
+a:visited, .tabtree .tabrow0 li a  {
+    color: [[setting:linkcolor]];
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    color: [[setting:linkhover]];
+    text-decoration: none;
+}
+
+a:active {
+    outline: 0;
+/* for browsers that understand */
+}
+
+a:focus {
+    outline: 0;
+/* for browsers that understand */
+}
+
+/* real main headings */
+.headingblock, .sitetopic h2 {
+  color: [[setting:headingcolor]];
+  border-bottom: 1px dotted #DADADA;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+/*outercontainer */
+#wrapper {
+	clear: both;
+}
+
+/*outer container around moodle content, set padding here for moodle content if necessary */
+#page-content-wrapper {
+	border-bottom: 3px solid [[setting:maincolor]];
+    border-top: 3px solid [[setting:maincolor]];
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.ie8 #page-content-wrapper {
+	background: #fff;
+}
+
+#page-content {
+	float: none;
+}
+
+.clearer {
+	clear: both;
+}
+
+
+/* header, get rid of the float from base theme */
+div.inner-wrap, #page-header.inner-wrap, #page-content.inner-wrap, #page-footer.inner-wrap {
+	position: relative;
+	width: 90%;
+	min-width: 960px;
+	margin: 0 auto;
+}
+
+#top-header {
+	height: 35px;
+	background: url([[pix:theme|tbar3]]) repeat-x scroll 0 0 [[setting:maincolor]];
+    border-bottom: 1px solid [[setting:maincolor]];
+}
+
+#top-left {
+	float: left;
+	line-height: 35px;
+	font-size: .9em;
+	color: #fff;
+	text-shadow: 0px 1px [[setting:maincolor]];
+}
+
+#page-header {
+	float: none;
+	height: 120px;
+}
+
+/*logo if any*/
+#logo {
+	float: left;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#innerrightinfo {
+	height: 120px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+#innerrightinfo img.userpicture {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #EEEEEE #DADADA #CCCCCC;
+    border-style: solid solid solid none;
+    border-width: 1px 1px 1px medium;
+    float: right;
+    height: 58px;
+    margin-top: 17px;
+    padding: 8px 8px 17px;
+    width: 48px;
+}
+
+#innerrightinfo div.logininfo {
+    border-right: medium none;
+    float: right;
+    height: 43px;
+    margin-top: 17px;
+    padding: 10px;
+    text-align: center;
+    width: 120px;
+    font-size: 85%;
+    font-weight: 300;
+}
+
+#innerrightinfo .langmenu {
+	text-align: center;
+    width: 130px;
+}
+
+/* Navbar */
+#page-site-index .navbar {
+	display: none;
+}
+
+.navbar {
+  border: none;
+  margin:0;
+  padding:5px 0px 0px;
+  border-width: 1px 0;
+  margin-top: 0px;
+  clear: both;
+  font-size: 90%;
+}
+
+.breadcrumb {
+	padding: 5px 0px;
+	color: #666;
+}
+
+.breadcrumb a {
+	color: #666;
+}
+
+.navbar .sep {
+   font-size: .7em;
+   color: #ccc;
+}
+
+.navbutton table, .navbutton table td {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+/* footer */
+#page-footer {
+	float: none;
+	font-size: 80%;
+	text-align: left;
+}
+
+
+/* forms and boxes */
+.mform fieldset {
+    border-color: #e5e5e5;
+}
+
+.mform legend.ftoggler {
+	color: #333;
+    border: 1px solid #dadada;
+    
+    background: #eee url([[pix:theme|bar1]]) repeat-x bottom left;
+   
+    -moz-box-shadow: 1px 1px 1px #FAFAFA inset, 1px 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 1px 1px 1px #FAFAFA inset, 1px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 1px #FAFAFA inset, 1px 2px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: 0 1px 0 #fff;
+    
+    padding: 5px 15px;
+}
+
+.generalbox {
+    border-color: #e5e5e5;
+    padding: 5px;
+}
+
+.sitetopic, .categorybox {
+	border: none;
+	padding: 0px;
+}
+
+#intro.generalbox {
+    background: #fafafa;
+    border: 1px solid #DADADA;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    margin: 1em auto;
+    padding: 10px;
+    width: 85%;
+}
+
+#notice,
+.redirectmessage2 {
+    text-align: center;
+    border-color: #e5e5e5;
+    padding: 5px;
+}
+
+.pagelayout-redirect #content {
+	width:60%; background: #fff; margin: 20px auto; padding: 1em;
+	border: 1px solid #dadada;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+}
+
+/* success or error message page-content */
+div.box.errorbox {
+    border: 1px solid #dadada;
+    color: #ff0000;
+    background: #fff url([[pix:theme|error]]) no-repeat 1% 3%;
+    padding: 10px;
+}
+
+div.redirectmessage {
+    width: 60%;
+    margin: 10px auto 0 auto;
+    border: 0px solid transparent;
+    font-size: 13px;
+    background: #fff url([[pix:theme|ajax-loader]]) no-repeat 50% 95%;
+    padding: 20px 20px 40px;  
+}
+
+.mform .error {
+	border: 1px dashed red;
+}
+
+.mform .error span {
+	border: none;
+}
+
+.enrolmenticons {
+}
+
+/*tabs */
+.tabtree .tabrow0 li a {
+   background: #fff url([[pix:theme|bar1]]) repeat-x top left;
+   -moz-box-shadow: 1px 1px 1px #fff inset;
+   -webkit-box-shadow: 1px 1px 1px #fff inset;
+   box-shadow: 1px 1px 1px #fff inset; 
+   }
+
+.tabtree .tabrow0 .here a {
+    background: #fff ;
+    padding-bottom: 5px;
+}
+
+.tabtree .tabrow0 li a {
+    border-color: #CCCCCC;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    padding: 8px 10px 4px;
+    
+    
+    -webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.ie7 .tabtree .tabrow0 li a {
+	padding-bottom: 7px;
+}
+
+/*2nd row */
+.tabtree .tabrow0 .tabrow1 {
+    padding: 15px 0 2px;
+}
+
+.tabtree .tabrow1 li a {
+    border-color: transparent;
+    border-style: solid;
+    border-width: 1px 1px 0;
+    padding: 8px 10px 4px;
+}
+
+.tabtree .tabrow0 ul, .tabtree .tabrow0 div {
+    border-top: 1px solid #DDDDDD;
+}    
+
+.tabtree .tabrow1 ul, .tabtree .tabrow1 div {
+    border-top: 0px;
+}
+
+tabtree .tabrow0 ul, .tabtree .tabrow0 div {
+    border-top: 1px solid #CCCCCC;
+} 
+/* Tables */
+
+#page-mod-glossary-editcategories .generalbox,
+#page-user-action_redir .generaltable,
+#page-user-index #participants,
+.path-mod-forum .forumheaderlist {
+    border-width: 1px;
+    border-color: #eee;
+    border-style: solid;
+}
+
+/*table header */
+#page-mod-glossary-editcategories .generalbox th,
+#page-user-action_redir .generaltable th,
+#page-user-index #participants th,
+.path-mod-choice .results th,
+.path-mod-forum .forumheaderlist th, #page-admin-course-category .generalbox th, .editcourse .header, .results .header, #attempts .header, .generaltable .header, .plugincompattable th, .environmenttable th, .forumheaderlist th {
+     color: #333;
+    background: #eee url([[pix:theme|bar1]]) repeat-x bottom left;
+    border-bottom: 1px solid #d5d5d5;
+    -moz-box-shadow: 1px 1px 1px #fafafa inset;
+    -webkit-box-shadow: 1px 1px 1px #fafafa inset;
+    box-shadow: 1px 1px 1px #fafafa inset;
+    text-shadow: 0 1px 0 #fff;
+    }
+
+#page-user-action_redir .generaltable td,
+#page-user-index #participants td,
+.path-mod-forum .forumheaderlist td {
+    border-color: #dadada;
+    border-width: 0 1px 1px 0;
+    border-style: solid;
+    border-collapse: collapse;
+    padding: 2px 8px;
+}
+
+#page-user-action_redir .generaltable .r1 td,
+#page-user-index #participants .r0 td,
+.path-mod-choice .results .count,
+.path-mod-forum .forumheaderlist .r1 td, .generaltable .r0 td {
+    background: #fafafa;
+}
+
+
+a.dimmed, a.dimmed_text, .dimmed_text, .dimmed_text a, .dimmed_category, .dimmed_category a {
+    color: #AAAAAA;
+}
+
+/** yui overlays **/
+
+div.yui3-widget.yui3-overlay.yui3-widget-positioned, #helppopupbox {
+    border: 1px solid #ccc;
+}
+
+div.yui3-overlay-content.yui3-widget-stdmod {
+    border: 1px solid #fff;
+    background: #ffff66 url([[pix:theme|alert-overlay]]) repeat-x;
+}
+
+div.yui3-widget-bd {
+    border: none;
+    background: none;
+}
+
+div.yui3-widget-bd h1.helpheading {
+    font-size: 16px !important;
+    font-weight: 800;
+    margin-top: 5px;
+}
+
+.yui-module.yui-overlay.yui-panel div.hd {
+    background: #eeeeee;
+    }
+
+/* report fixes and grade table fixes */
+.path-course-report #region-main-box #region-main .region-content, .path-course-report #page-content #region-main-box #region-post-box #region-main-wrap #region-main .region-content, .pagelayout-report .no-overflow {
+	overflow: auto;
+}
+
+.pagelayout-report #page-content {
+    overflow: hidden;
+} 
+
+.overview-tablecontainer, .graph {
+	overflow: auto;
+}
+
+table#completion-progress, #page-admin-course-index .editcourse {
+	display: block !important;
+    overflow: auto;
+    width: 100%;
+}
+
+#page-admin-plugins #plugins-control-panel {
+    display: block;
+    overflow: auto;
+}
+
+/*grade menu hover menu */
+.actionmenu .yui3-menu-content li a, .actionmenu .yui3-menu-content li, .actionmenu .yui3-menu-content li:hover a {
+	color: #000 !important;
+}
+
+.actionmenu div.yui3-menu {
+	border: 1px solid #ccc !important;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+	background: #fff !important;
+}
+
+.generaltable .yui3-menu-content li a, .generaltable .yui3-menu-content li:hover a {
+	background: transparent !important;
+	color: #333;
+	border: 0px solid transparent !important;
+	border-radius: 0px 0px !important;
+}
+
+.generaltable .yui3-menu-content li .yui3-menu-content li:hover a {
+	background: #eee !important;
+	border-radius: 0px 0px !important;
+	cursor: pointer;
+}
+
+#page-site-index .coursebox {
+	padding-bottom: 15px;
+}
+
+/*My Moodle Page */
+.path-my .coursebox .info {
+    float: none;
+    text-align: left;
+    width: 90%;
+}
+
+/*buttons */
+input[type="submit"], input[type="button"], #searchform_button, button {
+	padding: .5em .8em .5em;
+	border: 1px solid #ccc;
+	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2), 1px 1px 1px #fff inset;
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 1px 1px 1px #fff inset;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2), 1px 1px 1px #fff inset;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background: #eee url([[pix:theme|bar1]]) repeat-x bottom left;
+	text-shadow: 0 1px 1px 	#fff;
+	font-size: .95em;
+	font-weight: 500;
+	color: #333;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, #searchform_button:hover, button:hover{
+	-moz-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4), 1px 1px 1px #FFFFFF inset;
+	-webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4), 1px 1px 1px #FFFFFF inset;
+	box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4), 1px 1px 1px #FFFFFF inset;
+	color: #000;
+}
+
+input[type="submit"]:active, input[type="button"]:active {
+	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.15) inset, 1px 0px 1px rgba(0, 0, 0, 0.15) inset;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.15) inset, 1px 0px 1px rgba(0, 0, 0, 0.15) inset;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3) inset, 0 1px 1px rgba(0, 0, 0, 0.15) inset, 1px 0px 1px rgba(0, 0, 0, 0.15) inset;
+	color: #000;
+}
+
+.ie7 input[type="submit"]:hover, .ie7 input[type="button"]:hover, .ie8 input[type="submit"]:hover, .ie8 input[type="button"]:hover {
+	background-image: none;
+	border: 1px solid #666;
+}
+
+.navbar .navbutton input[type="submit"] {
+	background-color: #eee;
+    border: 1px solid #CCCCCC;
+    -webkit-box-shadow: 0 0 3px #CCCCCC inset;
+    box-shadow: 0 0 3px #CCCCCC inset;
+    font-size: 90%;
+}
+
+.navbar .navbutton .singlebutton input[type="submit"] {
+	background: #eee url([[pix:theme|greenLight]]) no-repeat 5px 50%;
+	padding-left: 16px;
+	color: green;
+}
+
+.editing .navbar .navbutton .singlebutton input[type="submit"] {
+	color: red;
+	background: #eee url([[pix:theme|redLight]]) no-repeat 5px 50%;
+}
+
+.navbar .navbutton input[type="submit"]:hover {
+	-webkit-box-shadow: 1px 1px 3px #ccc;
+	box-shadow: 1px 1px 3px #ccc;
+}
+
+.coursebox div.info h3.name {
+    background-image: url([[pix:theme|jcc]]);
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+}
+
+/*filemanager */
+.filemanager-container ul li {
+    border-bottom: 1px dashed #CCCCCC;
+    padding: 0.5em 0;
+}
+
+.filemanager-container {
+    padding: 1em 1.5em 1.5em;
+}
+
+.loginbox.twocolumns .loginpanel {
+    border-right: 1px solid #EEEEEE;
+}    
+
+/*gradebook updates and fixes */
+/* gradebook column headers */
+table#user-grades .catlevel1, table#user-grades .r1, .path-grade-report-grader table tr.even td.cell, .path-grade-report-grader table tr.even th {
+    background: #FFFFFF;
+}
+
+table#user-grades th.item {
+    max-width: 40px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+table#user-grades th.item:hover {
+    max-width: 250px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.pagelayout-report .tabtree {
+    font-size: 90%;
+}
+
+div.graderreportoverlay {
+	font-size: 80%;
+	padding: 1em;
+}
+
+#page-grade-report-user-index #graded_users_selector {
+   float: none;
+}
+
+table.user-grade {
+    width: 100%;
+}
+
+/*gradebook fixed student names column alignment issue for IE8 only */
+/*gradebook fixed student names column alignment issue */
+.ie8 table#user-grades th.category {
+	border-width:0px 0px 1px;
+}
+
+.section .activity .no-overflow {
+	overflow: inherit;
+}
+
+/*2.4 changes and updates */
+img.iconlarge {
+    height: 16px;
+    vertical-align: middle;
+    width: 16px;
+}
+
+.block .header .block_action img, .block .header .block_action input, .block_navigation .block_tree li.item_with_icon > p img, .block_navigation .block_tree .type_activity > p.tree_item.active_tree_node img, .block_navigation .block_tree li > p.hasicon img, .block_settings .block_tree li.item_with_icon > p img {
+	width: auto;
+	height: auto;
+	max-height: 16px;
+	max-width: 16px;
+}
+
+.sitetopic .section .activity:hover,
+.course-content .section .activity:hover { 
+	background-color: transparent; 
+}
+
+.block_navigation .block_tree li.type_activity > p.hasicon img {
+	width: 16px; height: 16px;
+}
+
+h3.name, h3.name a {
+	font-weight: normal;
+}

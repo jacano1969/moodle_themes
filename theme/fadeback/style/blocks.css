@@ -1,0 +1,119 @@
+.blockcont, #region-main {
+	 overflow:hidden;
+    background:transparent;
+    padding: 3px 10px 0px;
+}
+
+.block {
+    position: relative;
+    margin:0px auto 12px;    
+    border: 0px solid #DDDDDD;
+    
+    padding-bottom: 12px;
+    background: url([[pix:theme|blockshadow]]) repeat-x 50% 100%;
+	
+}
+
+
+.block .header {	
+	text-align: center;
+	padding: 15px 15px 5px;
+	background: #fafafa;
+	border: 1px solid #ddd;
+	border-bottom: 0px;
+	
+	-webkit-border-top-left-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+-moz-border-radius-topleft: 3px;
+-moz-border-radius-topright: 3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+
+  -moz-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: -1px 1px 1px #fff inset;
+}
+
+.block.hidden .header {
+	-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+}
+
+.block .title {
+	display: block;
+	background: url([[pix:theme|dot]]) repeat-x 0 53%;
+}
+
+/* block titles */
+.block .title h2 {
+	display: inline;
+	padding: 0px 8px; 
+	font-size: 1.1em;
+	font-weight: 500;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	
+	background: #fafafa;
+}
+
+.block .header .block_action {
+    display: block;
+    float: none;
+    position: absolute;
+    right: 5px;
+    top: 3px;
+    opacity: 0.3;
+}    
+
+.block .header .block_action:hover, .block.hidden .header .block_action {
+	opacity: 1;
+}
+
+.block .content {
+	padding: 5px 15px 15px;
+	font-weight: 300;
+	background: #fafafa;
+	border: 1px solid #ddd;
+	border-top: 0px;
+	
+    box-shadow: -1px -1px 1px #fff inset;
+	
+	-webkit-border-bottom-right-radius: 3px;
+-webkit-border-bottom-left-radius: 3px;
+-moz-border-radius-bottomright: 3px;
+-moz-border-radius-bottomleft: 3px;
+border-bottom-right-radius: 3px;
+border-bottom-left-radius: 3px;
+}
+
+/** some specific block styles for calendar block, login block, my profile block, etc. **/
+
+.block_calendar_month table.minicalendar.calendartable td,.block_calendar_month table.minicalendar.calendartable th {
+    border: none !important;
+}
+
+.block_calendar_month table.minicalendar {
+    margin-bottom: 0px !important;
+}
+
+.block_calendar_month table.minicalendar.calendartable th abbr {
+    border: none !important;
+    text-decoration: none;
+}
+
+.block_comments div.content li {
+    list-style-type: none;
+}
+
+.questionbankwindow.block {
+	padding: 0px;
+}
+
+.block_tree_box hr {
+	background: transparent;
+	border: none;
+	border-top: 1px solid #eee;
+}

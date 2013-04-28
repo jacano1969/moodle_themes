@@ -1,0 +1,181 @@
+.block {
+	border: 0px solid #ccc;
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+.block .header {
+	background: url([[pix:theme|bback]]) repeat scroll 0 0 #CCCCCC;
+    border: 1px solid #DADADA;
+    padding: 6px 8px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12);
+}
+
+.block .title {
+
+}
+
+/* block titles */
+.block .title h2 {
+	font-size: 13px;
+	font-weight: 400;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0 0;
+	color: [[setting:blockcolor]];
+	
+	padding-left: 20px;
+	background:url([[pix:theme|universal]]) no-repeat;
+	background-position:0px 1px !important;
+}
+
+/** Block icons **/
+.block_settings_navigation_tree .title h2,.block_settings .title h2 {
+background:url([[pix:theme|switch]]) no-repeat;
+}
+
+.johnblock .title h2 {
+background:url([[pix:theme|star]]) no-repeat;
+}
+
+.block_calendar_month .title h2 {
+background:url([[pix:theme|calendar]]) no-repeat;
+}
+
+.block_tags .title h2 {
+background:url([[pix:theme|tag]]) no-repeat;
+}
+
+.block_private_files .title h2 {
+background:url([[pix:theme|documents-stack]]) no-repeat;
+}
+
+.block_activity_modules .title h2 {
+background:url([[pix:theme|mouse]]) no-repeat;
+}
+
+.block_online_users .title h2 {
+background:url([[pix:theme|users]]) no-repeat;
+}
+
+.block_calendar_upcoming .title h2 {
+background:url([[pix:theme|calendar-blue]]) no-repeat;
+}
+
+.block_site_main_menu .title h2 {
+background:url([[pix:theme|book-open]]) no-repeat;
+}
+
+.block_course_list .title h2 {
+background:url([[pix:theme|jcourse]]) no-repeat;
+}
+
+.block_global_navigation_tree .title h2,.block_navigation .title h2 {
+background:url([[pix:theme|compass]]) no-repeat;
+}
+
+.block_search_forums .title h2 {
+background:url([[pix:theme|magnifier]]) no-repeat;
+}
+
+.block_news_items .title h2 {
+background:url([[pix:theme|newspaper--plus]]) no-repeat;
+}
+
+.block_recent_activity .title h2 {
+background:url([[pix:theme|chart-up-color]]) no-repeat;
+}
+
+.block_comments .title h2 {
+background:url([[pix:theme|balloons-box]]) no-repeat;
+}
+
+.block_messages .title h2 {
+background:url([[pix:theme|mail-send-receive]]) no-repeat;
+}
+
+.block_participants .title h2 {
+background:url([[pix:theme|user-silhouette]]) no-repeat;
+}
+
+.block_login .title h2 {
+background:url([[pix:theme|lock]]) no-repeat;
+}
+
+.block_adminblock .title h2 {
+background:url([[pix:theme|plus-circle]]) no-repeat;
+}
+
+.block_myprofile .title h2 {
+background:url([[pix:theme|user-pencil]]) no-repeat;
+}
+
+.block_course_overview .title h2 {
+background:url([[pix:theme|dashboard]]) no-repeat;
+}
+.block_rss_client .title h2 {
+background:url([[pix:theme|feed]]) no-repeat;
+}
+.block_mnet_hosts .title h2 {
+background:url([[pix:theme|network-hub]]) no-repeat;
+}
+.block_selfcompletion .title h2 {
+background:url([[pix:theme|ui-check-box]]) no-repeat;
+}
+.questionbankwindow .title h2 {
+background:url([[pix:theme|bank]]) no-repeat;
+color: black;
+}
+
+.block .content {
+	padding: 5px 10px;
+	font-weight: 300;
+	padding: 10px 15px 15px;
+	background: #fff;
+	border: 1px solid #DADADA;
+	border-top: 0px;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.12); 
+}
+
+.block .header .block_action {
+	margin: 0 0;
+}
+
+/** some specific block styles for calendar block, login block, my profile block, etc. **/
+
+.block_calendar_month table.minicalendar.calendartable td,.block_calendar_month table.minicalendar.calendartable th {
+    border: none !important;
+}
+
+.block_calendar_month table.minicalendar {
+    margin-bottom: 0px !important;
+}
+
+.block_calendar_month table.minicalendar.calendartable th abbr {
+    border: none !important;
+    text-decoration: none;
+}
+
+.block_comments div.content li {
+    list-style-type: none;
+}
+
+.questionbankwindow.block {
+	padding: 0px;
+}
+
+.block_tree_box hr {
+	background: transparent;
+	border: none;
+	border-top: 1px solid #eee;
+}
+
+/*quiz editing block header */
+#page-mod-quiz-edit .questionbankwindow div.header {
+	background-color: #eee;
+	color: inherit;
+}
+
+#page-mod-quiz-edit .questionbankwindow div.header a {
+	color: inherit;
+}
